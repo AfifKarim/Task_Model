@@ -42,4 +42,8 @@ class TaskRepositoryImpl implements TaskRepository {
       throw '$e';
     }
   }
+  @override
+  Future<void> updateTitleAndNote(Task task) async {
+    await _datasource.updateTask(task);
+  }
 }

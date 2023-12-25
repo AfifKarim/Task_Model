@@ -99,6 +99,7 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
     final time = ref.watch(timeProvider);
     final date = ref.watch(dateProvider);
     final category = ref.watch(categoryProvider);
+
     if (title.isNotEmpty) {
       final task = Task(
         title: title,
